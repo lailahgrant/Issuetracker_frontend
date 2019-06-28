@@ -1,85 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import './App.scss';
+import {logo} from './images/logo.png';
+import Dropdown from 'react-dropdown'
+import 'react-dropdown/style.css'
 
-function App() {
-  return (
-    <div className="App">
-      <div className = "body-wrapper"> 
-        <div class = "header">
-          <div class = "header-logo">
-            <h1>Administration</h1>
+
+class Gdadmin extends Component {
+  
+  render() { 
+    return (
+          <div className="bodyWrapper">
+          <div className="header-wrapper">
+            <img src={require('./images/logo2.png')} alt='logo' />            
+            <h1>Issue Tracker  Admin Dashboard</h1>
+            <div className="profile-info-section">
+            <img className="image-circular" src={require('./images/avater.jpg')} alt='logo' /> 
+            <p><i class="arrow down"></i></p>
             </div>
-          <div class = "header-list" >
-              <ul>
-                <li><a href="#">Edit</a></li>
-                <li><a href="#">Comment</a></li>
-                <li><a href="#">Assign</a></li>
-                <li><a href="#">Cancel</a></li>
-              </ul>
-          </div>
-      </div>
-      <table align= "center">
-        <tr>
-          <td align="right">Tracker:</td>
-          <td><input type = "text"></input></td>
-        </tr>
-        <tr>
-          <td align="right">Subject:</td>
-          <td><input type = "text" ></input></td>
-        </tr>
-        <tr>
-          <td align="right">Description:</td>
-          <td><input type = "text"></input></td>
-        </tr>
-        <tr>
-          <td align="right">Status:</td>
-          <td>
-            <select name = "status">
-                <option value = "Active">Active</option>
-                <option value = "Closed">Closed</option>
-                <option value = "Resolved">Resolved</option>
-            </select>
-        </td>
-        </tr>
-        <tr>
-          <td align="right">Priority:</td>
-          <td><input type = "text"></input></td>
-        </tr>
-        <tr>
-          <td align="right">Assign:</td>
-          <td><input type = "text"></input></td>
-        </tr>
-        <tr>
-          <td align="right">Category:</td>
-          <td><input type = "text"></input></td>
-        </tr>
-        <tr>
-          <td align="right">Company name:</td>
-          <td><input type = "text"></input></td>
-        </tr>
-        <tr>
-          <td align="right">Contact:</td>
-        <td><input type = "text"></input></td>
-        </tr>
-        <br></br>
-          <div align="right">LOG TIME</div>
-          <tr>
-            <td align="right">Spent time:</td>
-            <td><input type = "text"></input></td>hours
-            </tr>
-          <br></br>
-          <tr>
-            <td align="right">Activity:</td>
-            <td><input type = "text"></input></td>
-            </tr>
-          <br></br>
-         
-      </table>
-      <p align ="center"> Comment:</p>
-      <p><textarea className="text-area" id = "msg" name = "user_message"></textarea></p>
-    </div>
-  </div>
-  );
-}
 
-export default App;
+              {/* <a href="Team-members">My Team</a>
+              <a href="Company-Profile">Company Profile</a> */}
+              <hr></hr>
+                <ul>
+                  <li>
+                    <a href="Pending-Tickets">Pending Tickets</a>
+                    <a href="Assigned-Tickets">Assigned Tickets</a>
+                    <a href="Resolved-Tickets">Resolved Tickets</a>
+                    <a href="Projects">Projects</a>
+                    <a href="Jobs">Jobs Openiongs</a>                   
+                  </li>
+                </ul>
+          <div className="top-wrapper"></div>
+          <footer></footer>
+          </div>
+
+        </div>
+      
+          );
+            }
+              }
+
+export default Gdadmin;
+

@@ -4,59 +4,10 @@
   height: 100%;
   overflow: hidden;
 }
+/* .header-wrapper{
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-.text-area {
-  max-height: 200px;
-  vertical-align: top;
-  width: 50%;
-  height: 150px;
-  max-width: 100%;
-}
-.header-list ul li{
-  display: inline-block;
-  list-style: none;
-  padding: 25px;
-
-}
-.header-list ul li a{
-  text-decoration: none;
-  background-color: #00cc00;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 5px;
-
-}
-
-.body-wrapper{
-  width: 80%;
-  
-  background-color: #bbb;
-  margin-left: 10%;
-}
-
-table input {
-height: 30px;
-width: 300px;
-border-radius: 20px;
+} */
+.header-top h1 {
+font-size: 70px;
 }
 
