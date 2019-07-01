@@ -18,7 +18,7 @@ class Gdadmin extends Component {
             <img className="image-circular" src={require('./images/avater.jpg')} alt='logo' /> 
             <p><i class="arrow down"></i></p>
             </div>
-
+ 
               {/* <a href="Team-members">My Team</a>
               <a href="Company-Profile">Company Profile</a> */}
               <hr></hr>
